@@ -5,7 +5,7 @@ ENV         KUBE_CONTEXT default
 
 COPY        entrypoint.sh /
 RUN         apk --no-cache add -X http://dl-cdn.alpinelinux.org/alpine/edge/testing \
-                kubernetes
+                kubernetes \
                 nano && \
             chmod +x /entrypoint.sh
 
